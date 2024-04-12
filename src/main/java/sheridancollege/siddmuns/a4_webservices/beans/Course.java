@@ -5,8 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.antlr.v4.runtime.misc.NotNull;
 
-@Entity(name="STUDENT")
+@Entity(name="COURSE")
 @Data
+@NoArgsConstructor
 public class Course {
     @Id
     @Column(name="COURSECODE", nullable = false)
@@ -17,5 +18,4 @@ public class Course {
     private String courseCredit;
     @Column(name="EDIT")
     private boolean edit;
-
 }
